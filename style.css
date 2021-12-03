@@ -1,0 +1,33 @@
+* {
+    float: center;
+}
+.container {
+    position: relative;
+}
+.ball {
+    animation-name: ballBounce;
+    position: absolute;
+    animation-duration: 3s;
+    transform: translate(100px, 500px);
+    animation-iteration-count: infinite;
+}
+.ball-img {
+    width: 200px;
+}
+@keyframes ballBounce {
+    0% {
+        transform: translate(100px, 500px);
+    }
+    25% {
+        transform: translate(100px, 120px);
+    }
+    50% {
+        transform: translate(800px, 120px);
+    }
+    75% {
+        transform: translate(800px, 500px);
+    }
+    100%{
+        transform: translate(100px, 500px);
+    }
+}
